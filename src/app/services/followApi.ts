@@ -3,7 +3,7 @@ import { api } from "./api"
 export const followApi = api.injectEndpoints({
   endpoints: (builder) => ({
     followUser: builder.mutation<void, { followingId: string }>({
-      query: () => ({
+      query: (body) => ({
         url: "/follow",
         method: "POST",
         body
