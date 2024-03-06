@@ -1,7 +1,8 @@
 import { Header } from "../header"
 import { Container } from "../container"
-import { Navbar } from "@nextui-org/react"
+
 import { Outlet } from "react-router-dom"
+import { Navbar } from "../nav-bar"
 
 export const Layout = () => {
   return (
@@ -9,7 +10,7 @@ export const Layout = () => {
       <Header />
       <Container>
         <div className="div flex-2 p-4">
-          <Navbar />
+          <Navbar/>
         </div>
         <div className="flex-1 p-4">
           <Outlet />
