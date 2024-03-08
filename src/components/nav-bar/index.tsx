@@ -4,7 +4,7 @@ import { BsPostcard } from "react-icons/bs"
 import { FaUsers } from "react-icons/fa6"
 import { FiUsers } from "react-icons/fi"
 
-const Navbar = () => {
+export const NavBar = () => {
   return (
     <nav>
       <ul className="flex flex-col gap-5">
